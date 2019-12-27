@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<vehicle type="fertilizingSowingMachine">
+<vehicle type="herbicidalSowingMachine">
     <annotation>>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
     <storeData>
         <name>
@@ -10,6 +10,7 @@
         </specs>
         <functions>
             <function>$l10n_function_sowingMachine</function>
+            <function>$l10n_function_sowingMachineDirect</function>
         </functions>
         <image>store.dds</image>
         <price>5000</price>
@@ -165,8 +166,9 @@
             <area startNode="0>2" widthNode="0>3" heightNode="0>4"/>
             <groundReferenceNode index="1"/>
         </workArea>
-        <workArea type="sprayer" functionName="processSprayerArea">
-            <area startNode="0>2" widthNode="0>3" heightNode="0>4"/>
+        <workArea type="sprayer" functionName="processSprayerArea" requiresGroundContact="true">
+        <!--<workArea type="sprayer" functionName="processSprayerArea" requiresGroundContact="false">-->
+            <area startNode="0>9" widthNode="0>10" heightNode="0>4"/>
             <groundReferenceNode index="1"/>
         </workArea>
         <workArea type="ridgemarker" functionName="processRidgeMarkerArea" disableBackwards="false" needsSetIsTurnedOn="false" >
@@ -194,6 +196,14 @@
     </workParticles>
     <sprayer fillUnitIndex="2" unloadInfoIndex="2" loadInfoIndex="2">
         <usageScales workingWidth="9" scale="1"/>
+<!--        <sprayTypes>
+            <sprayType fillTypes="herbicide">
+                <usageScales workingWidth="4" />
+            </sprayType>
+            <sprayType fillTypes="liquidfertilizer">
+                <usageScales workingWidth="19" />
+            </sprayType>
+        </sprayTypes> -->
     </sprayer>
     <foldable>
         <foldingParts startMoveDirection="1" foldMiddleAnimTime="0.15" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.3">
@@ -291,8 +301,9 @@
                         <fillRootNode node="0>"/>
                         <fillMassNode node="0>"/>
 					</fillUnit>
-                    <fillUnit unit="$l10n_unit_literShort" fillTypes="liquidFertilizer" capacity="0"/>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="0"/>
 					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                    <unloading width="17" offset="0 0 0" />
                 </fillUnits>
 				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
 				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
@@ -313,8 +324,9 @@
                         <fillRootNode node="0>"/>
                         <fillMassNode node="0>"/>
 					</fillUnit>
-                    <fillUnit unit="$l10n_unit_literShort" fillTypes="liquidFertilizer" capacity="3000"/>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="3000"/>
 					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                    <unloading width="17" offset="0 0 0" />
                 </fillUnits>
 				<objectChange node="0>0|1|2" visibilityActive="true" visibilityInactive="false"/>
 				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
@@ -337,6 +349,7 @@
 					</fillUnit>
                     <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="3000"/>
 					<exactFillRootNode node="0>0|11|1" extraEffectDistance="0.8"/>
+                    <unloading width="17" offset="0 0 0" />
                 </fillUnits>
 				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
 				<objectChange node="0>0|1|4" visibilityActive="true" visibilityInactive="false"/>
@@ -357,8 +370,9 @@
                         <fillRootNode node="0>"/>
                         <fillMassNode node="0>"/>
 					</fillUnit>
-                    <fillUnit unit="$l10n_unit_literShort" fillTypes="liquidFertilizer" capacity="4000"/>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="4000"/>
 					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                    <unloading width="17" offset="0 0 0" />
                 </fillUnits>
 				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
 				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
@@ -435,6 +449,9 @@
         <areaMarkers leftNode="0>5" rightNode="0>6" backNode="0>7"/>
         <collisionTrigger node="0>1"/>
         <allowTurnBackward value="true"/>
+        <!--<turningRadiusLimitation rotationJointNode="attacherJoint" wheelIndices="1 2"/> -->
+        <minTurningRadius value="10"/>
+        <toolReverserDirectionNode node="0>7"/>
     </ai>
     <foliageBending>
         <bendingNode minX="-0.4" maxX="0.4" minZ="2.7" maxZ="4.9" yOffset="0.6"/>

@@ -10,7 +10,21 @@
     </description>
     <iconFilename>icon.dds</iconFilename>
     <multiplayer supported="true"/>
+	<specializations>
+		<specialization name="herbicidalSowingMachine" className="HerbicidalSpec" filename="HerbicidalSpec.lua"/>
+	</specializations>
+
+	<vehicleTypes>
+		<type name="herbicidalSowingMachine" parent="sowingMachine" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="sprayer"/>
+			<specialization name="herbicidalSowingMachine"/>
+		</type>
+	</vehicleTypes>
+
     <storeItems>
         <storeItem xmlFilename="950.xml" rootNode="vehicle"/>
     </storeItems>
+	<extraSourceFiles>	
+		<sourceFile filename="Herbicidal.lua" /> 
+	</extraSourceFiles>
 </modDesc>
