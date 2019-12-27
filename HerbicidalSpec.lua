@@ -1,55 +1,12 @@
-
--- Create a new class that inherits from a base class
---
-function inheritsFrom( baseClass )
-
-    -- The following lines are equivalent to the SimpleClass example:
-
-    -- Create the table and metatable representing the class.
-    local new_class = {}
-    local class_mt = { __index = new_class }
-
-    -- Note that this function uses class_mt as an upvalue, so every instance
-    -- of the class will share the same metatable.
-    --
-    function new_class:create()
-        local newinst = {}
-        setmetatable( newinst, class_mt )
-        return newinst
-    end
-
-    -- The following is the key to implementing inheritance:
-
-    -- The __index member of the new class's metatable references the
-    -- base class.  This implies that all methods of the base class will
-    -- be exposed to the sub-class, and that the sub-class can override
-    -- any of these methods.
-    --
-    if baseClass then
-        setmetatable( new_class, { __index = baseClass } )
-    end
-
-    return new_class
-end
-
---HerbicidalSpec = inheritsFrom(SowingMachine)
+--Custom specialization for planters / seeders that put down chemical
+--Fixes the double fertilizing bug and allows herbicide to work
+--Almost entirely a copy of the default FertilizingSowingMachine
 HerbicidalSpec = {}
 HerbicidalSpec.spec_sowingMachine	=g_specializationManager:getSpecializationByName("sowingMachine")
 HerbicidalSpec.spec_sprayer			=g_specializationManager:getSpecializationByName("sprayer")
 
 
 function HerbicidalSpec.prerequisitesPresent(specializations)
-	print("Checking herbicidal prereqs")
-	local hasSow	=SpecializationUtil.hasSpecialization(SowingMachine, specializations)
-	local hasSpray	=SpecializationUtil.hasSpecialization(Sprayer, specializations)
-
-	print("Specs: ", hasSow ~= nil, hasSpray ~= nil)
-	print("Specs2: ", hasSow, hasSpray)
-
-	if hasSow ~= nil and hasSpray ~= nil then		
-		return	true
-	end
-
 	return SpecializationUtil.hasSpecialization(SowingMachine, specializations) and SpecializationUtil.hasSpecialization(Sprayer, specializations)
 end
 
@@ -127,23 +84,6 @@ function HerbicidalSpec:processSowingMachineArea(superFunc, workArea, dt)
 	
 	self.spec_sowingMachine.isProcessing = self.spec_sowingMachine.isWorking
 
-	-- This stuff is handled in the spray specialization
-	-- having it here just doubles things
---	if sprayTypeIndex ~= nil then
---		local sprayChangedArea, sprayTotalArea = FSDensityMapUtil.updateSprayArea(startX, startZ, widthX, widthZ, heightX, heightZ, sprayTypeIndex)
---
---		sprayerParams.lastChangedArea = sprayerParams.lastChangedArea + sprayChangedArea
---		sprayerParams.lastTotalArea = sprayerParams.lastTotalArea + sprayTotalArea
---		sprayerParams.lastStatsArea = 0
---		sprayerParams.isActive = true
---
---		local stats = g_currentMission:farmStats(self:getLastTouchedFarmlandFarmId())
---		local ha = MathUtil.areaToHa(sprayerParams.lastChangedArea, g_currentMission:getFruitPixelsToSqm())
---		
---		stats:updateStats("fertilizedHectares", ha)
---		stats:updateStats("fertilizedTime", dt/(1000*60))
---		stats:updateStats("sprayUsage", sprayerParams.usage)
---	end
 	sowingParams.lastChangedArea = sowingParams.lastChangedArea + changedArea
 	sowingParams.lastStatsArea = sowingParams.lastStatsArea + changedArea
 	sowingParams.lastTotalArea = sowingParams.lastTotalArea + totalArea

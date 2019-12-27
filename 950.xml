@@ -13,7 +13,7 @@
             <function>$l10n_function_sowingMachineDirect</function>
         </functions>
         <image>store.dds</image>
-        <price>5000</price>
+        <price>50000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>CASEIH</brand>
@@ -167,7 +167,6 @@
             <groundReferenceNode index="1"/>
         </workArea>
         <workArea type="sprayer" functionName="processSprayerArea" requiresGroundContact="true">
-        <!--<workArea type="sprayer" functionName="processSprayerArea" requiresGroundContact="false">-->
             <area startNode="0>9" widthNode="0>10" heightNode="0>4"/>
             <groundReferenceNode index="1"/>
         </workArea>
@@ -196,14 +195,6 @@
     </workParticles>
     <sprayer fillUnitIndex="2" unloadInfoIndex="2" loadInfoIndex="2">
         <usageScales workingWidth="9" scale="1"/>
-<!--        <sprayTypes>
-            <sprayType fillTypes="herbicide">
-                <usageScales workingWidth="4" />
-            </sprayType>
-            <sprayType fillTypes="liquidfertilizer">
-                <usageScales workingWidth="19" />
-            </sprayType>
-        </sprayTypes> -->
     </sprayer>
     <foldable>
         <foldingParts startMoveDirection="1" foldMiddleAnimTime="0.15" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.3">
@@ -448,7 +439,7 @@
         <needsLowering value="true"/>
         <areaMarkers leftNode="0>5" rightNode="0>6" backNode="0>7"/>
         <collisionTrigger node="0>1"/>
-        <allowTurnBackward value="true"/>
+        <allowTurnBackward value="false"/>	<!--Just can't get it not to crash into itself-->
         <!--<turningRadiusLimitation rotationJointNode="attacherJoint" wheelIndices="1 2"/> -->
         <minTurningRadius value="10"/>
         <toolReverserDirectionNode node="0>7"/>
