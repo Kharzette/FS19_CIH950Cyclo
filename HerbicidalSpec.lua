@@ -2,9 +2,13 @@
 --Fixes the double fertilizing bug and allows herbicide to work
 --Almost entirely a copy of the default FertilizingSowingMachine
 HerbicidalSpec = {}
-HerbicidalSpec.spec_sowingMachine	=g_specializationManager:getSpecializationByName("sowingMachine")
-HerbicidalSpec.spec_sprayer			=g_specializationManager:getSpecializationByName("sprayer")
 
+
+function HerbicidalSpec.initSpecialization()
+	print("HerbicidalSpec.initSpecialization()!")
+	HerbicidalSpec.spec_sowingMachine	=g_specializationManager:getSpecializationByName("sowingMachine")
+	HerbicidalSpec.spec_sprayer			=g_specializationManager:getSpecializationByName("sprayer")
+end
 
 function HerbicidalSpec.prerequisitesPresent(specializations)
 	return SpecializationUtil.hasSpecialization(SowingMachine, specializations) and SpecializationUtil.hasSpecialization(Sprayer, specializations)

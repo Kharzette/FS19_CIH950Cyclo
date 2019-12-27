@@ -269,11 +269,14 @@
             <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="0>"/>
         </sounds>
     </cylindered>
-    <ridgeMarker onlyActiveWhenLowered="false" foldMinLimit="0.0" foldMaxLimit="0.3">
+    <ridgeMarker onlyActiveWhenLowered="true" foldMinLimit="0.0" foldMaxLimit="0.0">
         <marker animName="leftArm" workAreaIndex="3"/>
-        <marker animName="rightArm" workAreaIndex="4">
-        </marker>
+        <marker animName="rightArm" workAreaIndex="4"/>
     </ridgeMarker>
+	<ridgeFixer>
+		<markerVisibilityNode value="0>0|7|2"/>
+		<markerVisibilityNode value="0>0|8|2"/>
+	</ridgeFixer>
 	<connectionHoses>
         <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="0>0|0|7|0"  length="2" diameter="0.04" straighteningFactor="2">
             <objectChange node="0>0|0|6|2" visibilityActive="false" visibilityInactive="true"/>

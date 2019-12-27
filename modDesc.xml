@@ -12,10 +12,12 @@
     <multiplayer supported="true"/>
 	<specializations>
 		<specialization name="herbicidalSowingMachine" className="HerbicidalSpec" filename="HerbicidalSpec.lua"/>
+		<specialization name="ridgeFixer" className="RidgeFixer" filename="RidgeFixer.lua"/>
 	</specializations>
 
 	<vehicleTypes>
 		<type name="herbicidalSowingMachine" parent="sowingMachine" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="ridgeFixer"/>
 			<specialization name="sprayer"/>
 			<specialization name="herbicidalSowingMachine"/>
 		</type>
