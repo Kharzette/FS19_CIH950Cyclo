@@ -194,7 +194,12 @@
         </particle>
     </workParticles>
     <sprayer fillUnitIndex="2" unloadInfoIndex="2" loadInfoIndex="2">
-        <usageScales workingWidth="9" scale="1"/>
+        <UsageScales workingWidth="9" scale="1">
+			<UsageScale fillType="liquidFertilizer" scale="1.0" />
+			<UsageScale fillType="fertilizer" scale="1" />
+			<!--Pre-emergent herbicide should be more expensive and volumey-->
+			<UsageScale fillType="herbicide" scale="2" />
+		</UsageScales>
     </sprayer>
     <foldable>
         <foldingParts startMoveDirection="1" foldMiddleAnimTime="0.15" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.3">
@@ -285,7 +290,7 @@
     </connectionHoses>
     <fillUnit>
         <fillUnitConfigurations title="$l10n_configuration_valueExtension">
-            <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0" >
+            <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="2500" >
                 <fillUnits>
                     <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
                         <exactFillRootNode node="0>0|11|0"/>
@@ -307,8 +312,11 @@
 				<objectChange node="0>0|8|13" visibilityActive="false" visibilityInactive="false"/>
 				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
 				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+				<!--Markers On-->
+				<objectChange node="0>0|7|2" visibilityActive="true" visibilityInactive="true"/>				
+				<objectChange node="0>0|8|2" visibilityActive="true" visibilityInactive="true"/>				
             </fillUnitConfiguration>
-            <fillUnitConfiguration name="Big Tank" price="1500" >
+            <fillUnitConfiguration name="Big Tank" price="4000" >
                 <fillUnits>
                     <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
                         <exactFillRootNode node="0>0|11|0"/>
@@ -330,8 +338,11 @@
 				<objectChange node="0>0|8|13" visibilityActive="true" visibilityInactive="false"/>
 				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
 				<objectChange node="0>8|2" visibilityActive="true" visibilityInactive="false"/>
+				<!--Markers On-->
+				<objectChange node="0>0|7|2" visibilityActive="true" visibilityInactive="true"/>				
+				<objectChange node="0>0|8|2" visibilityActive="true" visibilityInactive="true"/>				
             </fillUnitConfiguration>
-            <fillUnitConfiguration name="Dry Tanks" price="2000" >
+            <fillUnitConfiguration name="Dry Tanks" price="4500" >
                 <fillUnits>
                     <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
                         <exactFillRootNode node="0>0|11|0"/>
@@ -353,8 +364,11 @@
 				<objectChange node="0>0|8|13" visibilityActive="false" visibilityInactive="false"/>
 				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
 				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+				<!--Markers On-->
+				<objectChange node="0>0|7|2" visibilityActive="true" visibilityInactive="true"/>				
+				<objectChange node="0>0|8|2" visibilityActive="true" visibilityInactive="true"/>				
             </fillUnitConfiguration>
-            <fillUnitConfiguration name="Twin Tanks" price="3000" >
+            <fillUnitConfiguration name="Twin Tanks" price="5500" >
                 <fillUnits>
                     <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
                         <exactFillRootNode node="0>0|11|0"/>
@@ -376,6 +390,115 @@
 				<objectChange node="0>0|8|13" visibilityActive="true" visibilityInactive="false"/>
 				<objectChange node="0>8|1" visibilityActive="true" visibilityInactive="false"/>
 				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+				<!--Markers On-->
+				<objectChange node="0>0|7|2" visibilityActive="true" visibilityInactive="true"/>				
+				<objectChange node="0>0|8|2" visibilityActive="true" visibilityInactive="true"/>				
+            </fillUnitConfiguration>
+
+			<!--Without the annoying markers-->
+            <fillUnitConfiguration name="No Ridge Markers" price="0" >
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
+                        <exactFillRootNode node="0>0|11|0"/>
+                        <fillRootNode node="0>"/>
+                        <fillMassNode node="0>"/>
+					</fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="0"/>
+					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                    <unloading width="17" offset="0 0 0" />
+                </fillUnits>
+				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|10" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|11" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|0" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|13" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|13" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+				<!--Marker remove-->
+				<objectChange node="0>0|7|2" visibilityActive="false" visibilityInactive="false"/>				
+				<objectChange node="0>0|8|2" visibilityActive="false" visibilityInactive="false"/>				
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="Big Tank no Markers" price="1500" >
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
+                        <exactFillRootNode node="0>0|11|0"/>
+                        <fillRootNode node="0>"/>
+                        <fillMassNode node="0>"/>
+					</fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="3000"/>
+					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                    <unloading width="17" offset="0 0 0" />
+                </fillUnits>
+				<objectChange node="0>0|1|2" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|10" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|11" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|0" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|7|13" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|8|13" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|2" visibilityActive="true" visibilityInactive="false"/>
+				<!--Marker remove-->
+				<objectChange node="0>0|7|2" visibilityActive="false" visibilityInactive="false"/>				
+				<objectChange node="0>0|8|2" visibilityActive="false" visibilityInactive="false"/>				
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="Dry Tanks no Markers" price="2000" >
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
+                        <exactFillRootNode node="0>0|11|0"/>
+                        <fillRootNode node="0>"/>
+                        <fillMassNode node="0>"/>
+					</fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="3000"/>
+					<exactFillRootNode node="0>0|11|1" extraEffectDistance="0.8"/>
+                    <unloading width="17" offset="0 0 0" />
+                </fillUnits>
+				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|1|4" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|7|10" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|8|11" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|7|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|0" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|13" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|13" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+				<!--Marker remove-->
+				<objectChange node="0>0|7|2" visibilityActive="false" visibilityInactive="false"/>				
+				<objectChange node="0>0|8|2" visibilityActive="false" visibilityInactive="false"/>				
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="Twin Tanks no Markers" price="3000" >
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
+                        <exactFillRootNode node="0>0|11|0"/>
+                        <fillRootNode node="0>"/>
+                        <fillMassNode node="0>"/>
+					</fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="4000"/>
+					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                    <unloading width="17" offset="0 0 0" />
+                </fillUnits>
+				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|10" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|11" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|12" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|8|12" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>8|0" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|7|13" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|8|13" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>8|1" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+				<!--Marker remove-->
+				<objectChange node="0>0|7|2" visibilityActive="false" visibilityInactive="false"/>				
+				<objectChange node="0>0|8|2" visibilityActive="false" visibilityInactive="false"/>				
             </fillUnitConfiguration>
         </fillUnitConfigurations>
     </fillUnit>
