@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="fertilizingSowingMachine">
+    <annotation>>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <en>950 Cyclo</en></name>
+        <specs>
+            <neededPower>120</neededPower>
+            <workingWidth>9.0</workingWidth>
+        </specs>
+        <functions>
+            <function>$l10n_function_sowingMachine</function>
+        </functions>
+        <image>store.dds</image>
+        <price>5000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>CASEIH</brand>
+        <category>planters</category>
+        <vertexBufferMemoryUsage>1751384</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>278634</indexBufferMemoryUsage>
+        <textureMemoryUsage>15029888</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_sowingMachine</typeDesc>
+        <filename>950.i3d</filename>
+        <size width="10" length="10"/>
+        <speedLimit value="14"/>
+        <components>
+            <component centerOfMass="0 0.6 1.0" solverIterationCount="10" mass="6000"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
+        </schemaOverlay>
+    </base>
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration>
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0" repr="0>0|2|0" radius="0.3" width="0.3" mass="2" initialCompression="40" suspTravel="0.1" spring="25" damper="20" frictionScale="3" tireTrackAtlasIndex="4"/>
+                    </wheel>
+                    <wheel hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0" repr="0>0|2|1" radius="0.3" width="0.3" mass="2" initialCompression="40" suspTravel="0.1" spring="25" damper="20" frictionScale="3" tireTrackAtlasIndex="4"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+    </wheels>
+    <speedRotatingParts>
+        <speedRotatingPart node="0>0|3" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|0|0" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|1|0" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|2|0" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|3|0" radius="0.187" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|4|0" radius="0.187" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|5|0" radius="0.187" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|6|0" radius="0.187" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|7|0" radius="0.187" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|8|0" radius="0.187" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|9|0" radius="0.187" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|10|0" radius="0.187" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|4|11|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|1" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|2" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|3" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|4" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|5" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|6" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|7" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|8" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|9" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|10" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|5|11" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|1" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|2" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|3" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|4" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|5" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|6" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|7" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|8" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|9" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|10" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|6|11" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|5" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|6|0|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|6|1|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|6|2|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|6|3|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|6|4|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|6|5|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|7|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|7|1" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|7|2" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|7|3" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|7|4" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|7|5" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|8|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|8|1" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|8|2" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|8|3" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|8|4" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|8|5" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|5" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|6|0|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|6|1|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|6|2|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|6|3|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|6|4|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|6|5|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|7|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|7|1" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|7|2" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|7|3" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|7|4" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|7|5" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|8|0" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|8|1" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|8|2" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|8|3" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|8|4" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|8|5" radius="0.179" foldMinLimit="0" foldMaxLimit="0.03" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|2|0|0" radius="0.165" wheelIndex="1" foldMinLimit="0" foldMaxLimit="0.03"/>
+        <speedRotatingPart node="0>0|8|2|0|0" radius="0.165" wheelIndex="1" foldMinLimit="0" foldMaxLimit="0.03"/>
+        <speedRotatingPart node="0>0|7|3|0" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|7|4|0" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="false"/>
+        <speedRotatingPart node="0>0|8|3|0" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="true"/>
+        <speedRotatingPart node="0>0|8|4|0" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="false"/>
+        <speedRotatingPart node="0>0|1|1|0|0" radius="0.3" foldMinLimit="0" foldMaxLimit="0.2" onlyActiveWhenLowered="true"/>
+    </speedRotatingParts>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>0|0|3|1|0" jointType="trailerLow"/>
+        </inputAttacherJoints>
+        <support animationName="moveSupport"/>
+    </attachable>
+    <powerConsumer ptoRpm="540" neededMaxPtoPower="40"/>
+    <lights>
+        <realLights>
+            <high>
+                <turnLightLeft node="0>0|1|0|1|0|1"/>
+                <turnLightRight node="0>0|1|0|1|1|1"/>
+            </high>
+        </realLights>
+        <turnLights>
+            <turnLightLeft shaderNode="0>0|1|0|1|0|0"/>
+            <turnLightRight shaderNode="0>0|1|0|1|1|0"/>
+        </turnLights>
+    </lights>
+    <groundReferenceNodes>
+        <groundReferenceNode node="0>0|10" threshold="0.2" depthNode="0>0|9|0"/>
+        <groundReferenceNode node="0>0|7|2|0|2|0|6" threshold="0.2" depthNode="0>0|7|2|0|2|0|6"/>
+        <groundReferenceNode node="0>0|8|2|0|1|3" threshold="0.2" depthNode="0>0|8|2|0|1|3"/>
+    </groundReferenceNodes>
+    <workAreas>
+        <workArea type="sowingMachine" functionName="processSowingMachineArea">
+            <area startNode="0>2" widthNode="0>3" heightNode="0>4"/>
+            <groundReferenceNode index="1"/>
+        </workArea>
+        <workArea type="sprayer" functionName="processSprayerArea">
+            <area startNode="0>2" widthNode="0>3" heightNode="0>4"/>
+            <groundReferenceNode index="1"/>
+        </workArea>
+        <workArea type="ridgemarker" functionName="processRidgeMarkerArea" disableBackwards="false" needsSetIsTurnedOn="false" >
+            <area startNode="0>0|7|2|0|2|0|0" widthNode="0>0|7|2|0|2|0|1" heightNode="0>0|7|2|0|2|0|2" />
+            <testArea startNode="0>0|7|2|0|2|0|3" widthNode="0>0|7|2|0|2|0|4" heightNode="0>0|7|2|0|2|0|5" />
+            <groundReferenceNode index="2" />
+        </workArea>
+
+        <workArea type="ridgemarker" functionName="processRidgeMarkerArea" disableBackwards="false" needsSetIsTurnedOn="false" >
+            <area startNode="0>0|8|2|0|1|0|0" widthNode="0>0|8|2|0|1|0|1" heightNode="0>0|8|2|0|1|0|2" />
+            <testArea startNode="0>0|8|2|0|1|1|0" widthNode="0>0|8|2|0|1|1|1" heightNode="0>0|8|2|0|1|1|2" />
+            <groundReferenceNode index="3" />
+        </workArea>
+    </workAreas>
+    <workParticles>
+        <particleAnimation>
+            <node node="0>0|7|2|0|2|1|0"  refNodeIndex="2" maxDepth="-0.05" materialType="SOIL" />
+            <node node="0>0|8|2|0|1|2|0" refNodeIndex="3" maxDepth="-0.05" materialType="SOIL" />
+        </particleAnimation>
+        <particle>
+            <node node="0>0|9|1" refNodeIndex="1" particleType="SOIL"/>
+            <node node="0>0|9|2" refNodeIndex="1" particleType="SOIL_SMOKE"/>
+            <node node="0>0|9|3" refNodeIndex="1" particleType="SOIL_CHUNKS" worldSpace="false"/>
+        </particle>
+    </workParticles>
+    <sprayer fillUnitIndex="2" unloadInfoIndex="2" loadInfoIndex="2">
+        <usageScales workingWidth="9" scale="1"/>
+    </sprayer>
+    <foldable>
+        <foldingParts startMoveDirection="1" foldMiddleAnimTime="0.15" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.3">
+            <foldingPart animationName="folding" speedScale="1"/>
+        </foldingParts>
+    </foldable>
+    <animations>
+        <animation name="folding">
+            <part node="0>0|0" startTime="1.5" endTime="10" startTrans="0 0.952 1.203" endTrans="0 0.952 3.772"/>
+            <part node="0>0|0|0" startTime="1.5" endTime="10" startRot="0 0 0" endRot="0 35 0"/>
+            <part node="0>0|0|1" startTime="1.5" endTime="10" startRot="0 0 0" endRot="0 -35 0"/>
+            <part node="0>0|2" startTime="0" endTime="1.5" startRot="-15 0 0" endRot="0 0 0"/>
+            <part node="0>0|7|4" startTime="0" endTime="1.5" startRot="-5 0 0" endRot="12 0 0"/>
+            <part node="0>0|8|4" startTime="0" endTime="1.5" startRot="-5 0 0" endRot="12 0 0"/>
+            <part node="0>0|2" startTime="1.5" endTime="3.5" startRot="0 0 0" endRot="20 0 0"/>
+            <part node="0>0|7|4" startTime="2.5" endTime="3.5" startRot="12 0 0" endRot="3 0 0"/>
+            <part node="0>0|8|4" startTime="2.5" endTime="3.5" startRot="12 0 0" endRot="3 0 0"/>
+            <part node="0>0|7" startTime="1.5" endTime="10" startRot="0 0 0" endRot="0 -92 0"/>
+            <part node="0>0|8" startTime="1.5" endTime="10" startRot="0 0 0" endRot="0 92 0"/>
+            <part node="0>0|0|3" startTime="1.5" endTime="10" startRot="-8 0 0" endRot="12 0 0"/>
+            <part node="0>0|0|3|1" startTime="1.5" endTime="10" startRot="8 0 0" endRot="-12 0 0"/>
+            <part node="0>0|0|4" startTime="1.5" endTime="10" startTrans="0 -0.1 0.65" endTrans="0 -0.3 0.65"/>
+            <part node="0>0|8|10" startTime="1.5" endTime="10" startRot="0 0 0" endRot="0 -51.9 0"/>
+            <part node="0>0|1|3" startTime="1.5" endTime="10" startRot="0 0 0" endRot="0 40.878 0"/>
+            <part node="0>0|2|2" startTime="0" endTime="1.5" startRot="7.838 0 0" endRot="0 0 0"/>
+            <part node="0>0|2|2" startTime="1.5" endTime="3.5" startRot="0 0 0" endRot="4.825 0 0"/>
+            <part node="0>0|1|1|1" startTime="0" endTime="1.5" startRot="-3.259 0 0" endRot="10.41 0 0"/>
+            <part node="0>0|1|1|1" startTime="1.5" endTime="3.5" startRot="10.41 0 0" endRot="35 0 0"/>
+            <part node="0>0|1|5" startTime="1.5" endTime="10" startRot="180 0 -180" endRot="180 40.878 -180"/>
+            <part node="0>0|7|11" startTime="1.5" endTime="10" startRot="-180 0 -180" endRot="-180 -51.9 -180"/>
+        </animation>
+        <animation name="leftArm">
+            <part node="0>0|7|2" startTime="0" duration="2.1" startRot="0 0 0" endRot="0 0 -98"/>
+            <part node="0>0|7|2|0" startTime="0.5" duration="1.0" startRot="0 0 0" endRot="0 0 -90"/>
+            <part node="0>0|7|2|1" startTime="0" duration="2.1" startTrans="0.081 0.224 0" endTrans="0.081 0.395 0"/>
+            <part node="0>0|7|2|3|0" startTime="0.5" duration="1.0" startTrans="-0.006 0.428 0" endTrans="-0.006 0.295 0"/>
+        </animation>
+        <animation name="rightArm">
+            <part node="0>0|8|2" startTime="0" duration="2.1" startRot="0 0 0" endRot="0 0 98"/>
+            <part node="0>0|8|2|0" startTime="0.5" duration="1.0" startRot="0 0 0" endRot="0 0 90"/>
+            <part node="0>0|8|2|1" startTime="0" duration="2.1" startTrans="-0.078 0.224 0" endTrans="-0.078 0.395 0"/>
+            <part node="0>0|8|2|3|0" startTime="0.5" duration="1.0" startTrans="0.004 0.436 0" endTrans="0.004 0.295 0"/>
+        </animation>
+        <animation name="moveSupport">
+            <part node="0>0|0|4|0" startTime="0" endTime="0.9" startTrans="0 0 0" endTrans="0 -0.65 0"/>
+        </animation>
+        <animation name="toggleCover">
+            <part node="0>0|1|4|0" startTime="0" endTime="2" startRot="0 180 0" endRot="-90 180 0"/>
+            <part node="0>0|7|10|0" startTime="0" endTime="2" startRot="0 180 0" endRot="-90 180 0"/>
+            <part node="0>0|8|11|0" startTime="0" endTime="2" startRot="0 180 0" endRot="-90 180 0"/>
+        </animation>
+    </animations>
+    <cylindered>
+        <movingTools>
+            <movingTool node="0>0|2" playSound="true" wheelIndices="1 2"/>
+            <movingTool node="0>0|0" playSound="true">
+                <inputAttacherJoint value="true"/>
+            </movingTool>
+            <movingTool node="0>0|0|3|1" playSound="true">
+                <inputAttacherJoint value="true"/>
+            </movingTool>
+        </movingTools>
+        <movingParts>
+            <movingPart node="0>0|0|3|2" referencePoint="0>0|0|5" referenceFrame="0>0|0|5" isActiveDirty="true" scaleZ="true" playSound="false"/>
+        </movingParts>
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="0>"/>
+        </sounds>
+    </cylindered>
+    <ridgeMarker onlyActiveWhenLowered="false" foldMinLimit="0.0" foldMaxLimit="0.3">
+        <marker animName="leftArm" workAreaIndex="3"/>
+        <marker animName="rightArm" workAreaIndex="4">
+        </marker>
+    </ridgeMarker>
+	<connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="0>0|0|7|0"  length="2" diameter="0.04" straighteningFactor="2">
+            <objectChange node="0>0|0|6|2" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>0|0|7|1" length="2.6" diameter="0.04" straighteningFactor="2">
+            <objectChange node="0>0|0|6|3" visibilityActive="false" visibilityInactive="true"/> 
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="0>0|0|7|2"  length="2" diameter="0.04" straighteningFactor="2">
+            <objectChange node="0>0|0|3|0|0|4" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>0|0|7|3" length="2.6" diameter="0.04" straighteningFactor="2">
+            <objectChange node="0>0|0|3|0|0|5" visibilityActive="false" visibilityInactive="true"/> 
+        </hose>
+    </connectionHoses>
+    <fillUnit>
+        <fillUnitConfigurations title="$l10n_configuration_valueExtension">
+            <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0" >
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
+                        <exactFillRootNode node="0>0|11|0"/>
+                        <fillRootNode node="0>"/>
+                        <fillMassNode node="0>"/>
+					</fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="liquidFertilizer" capacity="0"/>
+					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                </fillUnits>
+				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|10" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|11" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|0" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|13" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|13" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="Big Tank" price="1500" >
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
+                        <exactFillRootNode node="0>0|11|0"/>
+                        <fillRootNode node="0>"/>
+                        <fillMassNode node="0>"/>
+					</fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="liquidFertilizer" capacity="3000"/>
+					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                </fillUnits>
+				<objectChange node="0>0|1|2" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|10" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|11" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|0" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|7|13" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|8|13" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|2" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="Dry Tanks" price="2000" >
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
+                        <exactFillRootNode node="0>0|11|0"/>
+                        <fillRootNode node="0>"/>
+                        <fillMassNode node="0>"/>
+					</fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="3000"/>
+					<exactFillRootNode node="0>0|11|1" extraEffectDistance="0.8"/>
+                </fillUnits>
+				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|1|4" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|7|10" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|8|11" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|7|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|12" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|0" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|13" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|13" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|1" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration name="Twin Tanks" price="3000" >
+                <fillUnits>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="2500">
+                        <exactFillRootNode node="0>0|11|0"/>
+                        <fillRootNode node="0>"/>
+                        <fillMassNode node="0>"/>
+					</fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="liquidFertilizer" capacity="4000"/>
+					<exactFillRootNode node="0>0|11|0" extraEffectDistance="0.8"/>
+                </fillUnits>
+				<objectChange node="0>0|1|2" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|1|4" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|10" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|8|11" visibilityActive="false" visibilityInactive="false"/>
+				<objectChange node="0>0|7|12" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|8|12" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>8|0" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|7|13" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>0|8|13" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>8|1" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="0>8|2" visibilityActive="false" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="0>0|7|14|0" fillUnitIndex="1" maxDelta="0.2"/>
+                    <volume node="0>0|8|14|0" fillUnitIndex="1" maxDelta="0.2"/>
+                    <volume node="0>0|1|4|1" fillUnitIndex="2" maxDelta="0.2"/>
+                    <volume node="0>0|7|10|1" fillUnitIndex="2" maxDelta="0.2"/>
+                    <volume node="0>0|8|11|1" fillUnitIndex="2" maxDelta="0.2"/>
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+        <unloadInfos>
+            <unloadInfo>
+                <node node="0>0|7|14|1" width="1.4" length="0.1"/>
+            </unloadInfo>
+            <unloadInfo>
+                <node node="0>0|8|14|1" width="1.4" length="0.1"/>
+            </unloadInfo>
+            <unloadInfo>
+                <node node="0>0|11|2" width="1.4" length="0.1"/>
+            </unloadInfo>
+        </unloadInfos>
+        <loadInfos>
+            <loadInfo>
+                <node node="0>0|7|14|2" width="1.4" length="0.1"/>
+            </loadInfo>
+            <loadInfo>
+                <node node="0>0|8|14|2" width="1.4" length="0.1"/>
+            </loadInfo>
+            <loadInfo>
+                <node node="0>0|11|3" width="1.4" length="0.1"/>
+            </loadInfo>
+        </loadInfos>
+    </fillVolume>
+    <sowingMachine fillUnitIndex="1">
+        <seedFruitTypeCategories>planter</seedFruitTypeCategories>
+        <needsActivation value="true"/>
+        <useDirectPlanting value="true" />
+        <sounds>
+            <work template="DEFAULT_SOWING_WORK" linkNode="0>"/>
+            <airBlower template="DEFAULT_SOWING_AIR_BLOWER" linkNode="0>"/>
+        </sounds>
+        <animationNodes>
+            <animationNodes node="0>0|7|1" rotSpeed="-400" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="3"/>
+            <animationNodes node="0>0|8|1" rotSpeed="400" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="3"/>
+        </animationNodes>
+    </sowingMachine>
+    <turnOnVehicle turnOffIfNotAllowed="true"/>
+    <cover>
+        <coverConfigurations>
+            <coverConfiguration>
+                <cover openAnimation="toggleCover" fillUnitIndices="2" openOnBuy="false"/>
+            </coverConfiguration>
+        </coverConfigurations>
+    </cover>
+    <ai>
+        <needsLowering value="true"/>
+        <areaMarkers leftNode="0>5" rightNode="0>6" backNode="0>7"/>
+        <collisionTrigger node="0>1"/>
+        <allowTurnBackward value="true"/>
+    </ai>
+    <foliageBending>
+        <bendingNode minX="-0.4" maxX="0.4" minZ="2.7" maxZ="4.9" yOffset="0.6"/>
+        <bendingNode minX="-1.3" maxX="1.3" minZ="-0.4" maxZ="2.7" yOffset="0.6"/>
+        <bendingNode minX="-1.6" maxX="1.6" minZ="-2.3" maxZ="-0.4" yOffset="0.6"/>
+        <bendingNode minX="-1" maxX="3.3" minZ="-1.5" maxZ="0" yOffset="-0.3" node="0>0|7|0"/>
+        <bendingNode minX="-3.3" maxX="1" minZ="-1.5" maxZ="0" yOffset="-0.3" node="0>0|8|0"/>
+    </foliageBending>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+</vehicle>

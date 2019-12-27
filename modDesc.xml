@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="44">
+    <author>Oldiron1214/Steenkamp Modding adub modding</author>
+    <version>1.0</version>
+    <title>
+        <en>Case International 950 Cyclo</en>
+    </title>
+    <description>
+        <en>CIH 12 Row Planter</en>
+    </description>
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="950.xml" rootNode="vehicle"/>
+    </storeItems>
+</modDesc>
