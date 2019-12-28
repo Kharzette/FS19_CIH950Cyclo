@@ -66,6 +66,8 @@ function RidgeFixer:onUpdate(dt, isActiveForInput, isActiveForInputIgnoreSelecti
 		end
 	end
 
+	--this is a terrible way to do this
+	--need to find an eventish way
 	local	spec	=self.spec_ridgeMarker
 	local	specSow	=spec.spec_sowingMachine
 

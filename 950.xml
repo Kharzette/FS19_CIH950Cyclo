@@ -2,11 +2,11 @@
 <vehicle type="herbicidalSowingMachine">
     <annotation>>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
     <storeData>
-        <name>
-            <en>950 Cyclo</en></name>
+        <name><en>950 Cyclo</en></name>
         <specs>
             <neededPower>120</neededPower>
             <workingWidth>9.0</workingWidth>
+			<fillTypes>seeds fertilizer liquidfertilizer herbicide</fillTypes>
         </specs>
         <functions>
             <function>$l10n_function_sowingMachine</function>
