@@ -30,7 +30,7 @@
         <size width="10" length="10"/>
         <speedLimit value="14"/>
         <components>
-            <component centerOfMass="0 0.6 1.0" solverIterationCount="10" mass="6000"/>
+            <component centerOfMass="0 0.6 1.0" solverIterationCount="10" mass="2800"/>
         </components>
         <schemaOverlay attacherJointPosition="0 0">
             <default name="DEFAULT_IMPLEMENT"/>
