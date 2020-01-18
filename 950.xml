@@ -475,5 +475,5 @@
         <bendingNode minX="-3.3" maxX="1" minZ="-1.5" maxZ="0" yOffset="-0.3" node="0>0|8|0"/>
     </foliageBending>
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
-    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+    <washable dirtDuration="120" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
 </vehicle>
